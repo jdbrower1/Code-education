@@ -15,6 +15,14 @@ int main()
     GameState gameState;
     MoveStack moveStack;
 
+    std::cout << "\tTic Tac Toe\n" << std::endl;
+    std::cout << "The board is split into 9 tiles chosen by row and column\n";
+    std::cout << "Example the top left tile is chosen by inputing the word 'Move' followed by 0 0\n";
+    std::cout << "This will place your marker, 'X' or 'O', in the selected Tile (in this example the top right\n";
+    std::cout << "The placements for the top row is (0 0), (0 1), (0 2)\n";
+    std::cout << "The middle row is (1 0), (1 1), (1 2)\n";
+    std::cout << "And the bottom (2 0), (2 1), (2 2)\n";
+
     bool tie = false;
 
     while(gameState.checkLastPlayerWin() != true)
