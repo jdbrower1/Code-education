@@ -56,7 +56,7 @@ int GameState::getCurrentPlayer()
 
 int GameState::addMove(Move move)
 {
-	if (moveStack.getSize() > 8)
+	if (moveStack.getSize() == 8)
 	{
 		return 0;
 	}

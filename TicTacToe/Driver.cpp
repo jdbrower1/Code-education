@@ -32,7 +32,16 @@ int main()
             if (Command == "move" || Command == "Move")
             {
                 cin >> temp.x >> temp.y;
-                gameState.addMove(temp);
+                if (gameState.addMove(temp) == 0)
+                {
+                    tie = true;
+                    break;
+                }
+                else
+                {
+                    gameState.addMove(temp);
+                }
+                
                 
             }
             else if (Command == "Undo" || Command == "undo")
@@ -40,12 +49,6 @@ int main()
                 gameState.undoLast();
             }
 
-            if (gameState.addMove(temp) == 0)
-            {
-                tie = true;
-
-                break;
-            }
                
     }
 
@@ -54,10 +57,12 @@ int main()
     {
         if (gameState.getCurrentPlayer() == 0)
         {
+            gameState.displayBoardState(cout);
             std::cout << "The O's Win it!" << std::endl;
         }
         else
         {
+            gameState.displayBoardState(cout);
             std::cout << "The X's Win it!" << std::endl;
         }
 
