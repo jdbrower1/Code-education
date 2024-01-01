@@ -1,0 +1,3 @@
+C:\Users\Jason\source\repos\Code-education\CGPA-Calc\x64\Debug\CGPA-Calc.exe
+C:\Users\Jason\source\repos\CGPA-Calc\CGPA-Calc\x64\Debug\CGPA-Calc.exe
+C:\Users\Jason\source\repos\CGPA-Calc\x64\Debug\CGPA-Calc.exe
