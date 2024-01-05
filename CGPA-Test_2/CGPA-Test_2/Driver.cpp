@@ -11,16 +11,34 @@ int main()
 
     int size;
     int selection;
+
+    std::cout << "Welcome to the CPGA Calculator!!!\n" << std::endl;
+    
     
     std::string StudentName = test.setStudent();
 
-    std::cout << "How many Classes did you take this Semester? " << std::endl;
+    std::cout << "\nNow Enter How Many Classes You Took This Semester? ";
     std::cin >> size;
     std::cin.ignore();
 
-    std::cout << "Enter 1 for Basic Calculation or 2 for Indepth Calculation ";
+    std::cout << "\nThank You!" << std::endl;
+    std::cout << std::endl;
+    std::cout << "We have 2 options" << std::endl;
+    std::cout << "There is the Basic Calculator\n   This Requires: " << std::endl;
+    std::cout << "\t1. The Final grade you recived in each Class\n\t2. The Credit Hours awarded for each class" << std::endl;
+    std::cout << std::endl;
+    std::cout << "We can also run an Indepth Calculation";
+    std::cout << " (this provides a much more accurate result)" << std::endl;
+    std::cout << "   This Requires" << std::endl;
+    std::cout << "\t1. Grade recieved on your three Exams for each class" << std::endl;
+    std::cout << "\t2. Grade recieved on your Final Exam for each class" << std::endl;
+    std::cout << "\t3. Credit Hours awarded for each class" << std::endl;
+    std::cout << std::endl;
+
+    std::cout << "Enter:\n1 - for Basic Calculation \n2 - for Indepth Calculation " << std::endl;
     std::cin >> selection;
     std::cin.ignore();
+    std::cout << std::endl;
 
     if (selection == 1) 
     {

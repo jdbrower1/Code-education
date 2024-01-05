@@ -34,7 +34,7 @@ Data::~Data()
 std::string Data::setStudent()
 {
 	std::string Name;
-	std::cout << "Enter Full Name of Student: ";
+	std::cout << "First Enter your Full Name: ";
 	std::getline(std::cin, Name);
 	return Name;
 }
@@ -44,7 +44,9 @@ std::string Data::setCourseName()
 	std::string Course;
 	std::cout << "Enter Full Name of Course: ";
 	
+	
 	std::getline(std::cin, Course);
+	std::cout << std::endl;
 	return Course;
 }
 
@@ -85,19 +87,19 @@ char Data::setBasicGrade()
 			std::cout << "Invalid Entry" << std::endl;
 		}
 	}
-	
 }
 
 int Data::setCreditHours()
 {
 	bool BreakOut = false;
 	int temp;
-	std::cout << "How Many Credit Hours did you recive for this Course? ";
+	std::cout << "\nHow Many Credit Hours did you recive for this Course? ";
 	std::cin >> temp;
 	while (!BreakOut)
 	{
 		if (temp < 5)
 		{
+			std::cout << std::endl;
 			BreakOut = true;
 			return temp;
 		}	
@@ -124,6 +126,7 @@ double Data::setExam1()
 		std::string DubCounter = std::to_string(static_cast<int>(temp));
 		if (DubCounter.length() < 3)
 		{
+			std::cout << "\n";
 			BreakOut = true;
 			return temp;
 		}
@@ -150,6 +153,7 @@ double Data::setExam2()
 		std::string DubCounter = std::to_string(static_cast<int>(temp));
 		if (DubCounter.length() < 3)
 		{
+			std::cout << "\n";
 			BreakOut = true;
 			return temp;
 		}
@@ -175,6 +179,7 @@ double Data::setExam3()
 		std::string DubCounter = std::to_string(static_cast<int>(temp));
 		if (DubCounter.length() < 3)
 		{
+			std::cout << "\n";
 			BreakOut = true;
 			return temp;
 		}
@@ -199,6 +204,7 @@ double Data::setFinal()
 		std::string DubCounter = std::to_string(static_cast<int>(temp));
 		if (DubCounter.length() < 3)
 		{
+			std::cout << "\n";
 			BreakOut = true;
 			return temp;
 		}
