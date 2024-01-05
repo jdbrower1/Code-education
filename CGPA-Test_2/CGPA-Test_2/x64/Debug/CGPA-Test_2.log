@@ -1,0 +1,9 @@
+﻿  Calc.cpp
+C:\Users\Brower_admin\source\repos\CGPA-Test_2\Calc.cpp(260,9): warning C4101: 'tempGrade': unreferenced local variable
+C:\Users\Brower_admin\source\repos\CGPA-Test_2\Calc.cpp(139): warning C4715: 'Data::setExam1': not all control paths return a value
+C:\Users\Brower_admin\source\repos\CGPA-Test_2\Calc.cpp(113): warning C4715: 'Data::setCreditHours': not all control paths return a value
+C:\Users\Brower_admin\source\repos\CGPA-Test_2\Calc.cpp(89): warning C4715: 'Data::setBasicGrade': not all control paths return a value
+C:\Users\Brower_admin\source\repos\CGPA-Test_2\Calc.cpp(164): warning C4715: 'Data::setExam2': not all control paths return a value
+C:\Users\Brower_admin\source\repos\CGPA-Test_2\Calc.cpp(188): warning C4715: 'Data::setExam3': not all control paths return a value
+C:\Users\Brower_admin\source\repos\CGPA-Test_2\Calc.cpp(212): warning C4715: 'Data::setFinal': not all control paths return a value
+  CGPA-Test_2.vcxproj -> C:\Users\Brower_admin\source\repos\CGPA-Test_2\x64\Debug\CGPA-Test_2.exe
